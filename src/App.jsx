@@ -1,14 +1,12 @@
-import 'bootswatch/dist/flatly/bootstrap.css'
-
+import Login from './views/login';
+import 'bootswatch/dist/flatly/bootstrap.css';
+import './custom.css'
 
 function App() {
 
   return (
-      <div>
-        <h1>Olá Mundo!</h1>
-        <button type="button" className="btn btn-primary">Clique Aqui</button>
-      </div>
+    <Login/>
   )
 }
 
-export default App
+export default App;
