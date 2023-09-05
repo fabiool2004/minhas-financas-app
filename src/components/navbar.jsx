@@ -12,7 +12,7 @@ function Navbar() {
         </button>
         <div className='collapse navbar-collapse' id='navbarResponsive'>
           <ul className='navbar-nav'>
-            <NavbarItem referencia='/' titulo='Home'/>
+            <NavbarItem referencia='/home' titulo='Home'/>
             <NavbarItem referencia='cadastro-usuario' titulo='Usuários'/>
             <NavbarItem referencia='lancamentos' titulo='Lançamentos'/>
             <NavbarItem referencia='login' titulo='Login'/>

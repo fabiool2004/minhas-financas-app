@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Card from "../components/card";
 import FormGroup from "../components/formGroup";
+import { useNavigate } from 'react-router-dom';
 
 function CadastroUsuario() {
 
   const [controller, setController] = useState({ nome: '', email: '', senha: '', confirmaSenha: '' });
+
+  const navigate = useNavigate();
 
   const cadastrar = () => {
     console.log('Nome: ', controller.nome)
@@ -55,7 +58,7 @@ function CadastroUsuario() {
               </input>
             </FormGroup>
             <button className='btn btn-success col-md-6' onClick={cadastrar}>Salvar</button>
-            <button className='btn btn-danger col-md-6'>Cancelar</button>
+            <button className='btn btn-danger col-md-6' onClick={() => navigate('/login')}>Cancelar</button>
           </div>
         </div>
       </div>
